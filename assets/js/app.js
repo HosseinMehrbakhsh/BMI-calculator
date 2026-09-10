@@ -103,7 +103,7 @@ function calculateBMI() {
         `;
         outGlassBox.style.backgroundColor = 'rgba(251, 251, 0, 0.47)';
     }
-    else {
+    else if (userBMI >= 30) {
         outGlassBox.innerHTML = `
             <div class="d-flex flex-column align-items-center px-4 py-3">
                 <img src="assets/imgs/fat.webp" width="100%" alt="">
@@ -129,6 +129,21 @@ function calculateBMI() {
         `;
         outGlassBox.style.backgroundColor = 'rgba(255, 0, 0, 0.42)';
         outGlassBox.style.color = 'white';
+    }
+
+    else {
+        outGlassBox.innerHTML = `
+            <div class="glass_body p-4 mb-3 d-flex justify-content-around">
+                <div class="calc_BMI">
+                    <span class="h2">ورودی نامعتبر!!!</span>
+
+                </div>
+
+            </div>
+            <a href='' class="btn btn-info d-block mx-3 mb-4">محاسبه مجدد</a>
+        `;
+        outGlassBox.style.backgroundColor = 'rgba(255, 0, 0, 0.42)';
+    
     }
 
     container.append(outGlassBox);
