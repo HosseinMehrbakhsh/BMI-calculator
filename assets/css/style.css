@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/imgs/background.webp');
+    background-image: url('../imgs/background.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -10,10 +10,10 @@ calcBtn.addEventListener('click', calculateBMI);
 
 
 document.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter' & !inpGlassBox.classList.contains('d-none')) {
+    if (e.key === 'Enter' && !inpGlassBox.classList.contains('d-none')) {
         calculateBMI();
     }
-    else if (e.key === 'Enter' & inpGlassBox.classList.contains('d-none')) {
+    else if (e.key === 'Enter' && inpGlassBox.classList.contains('d-none')) {
         location.reload();
     }
 });
@@ -29,7 +29,7 @@ function calculateBMI() {
     if (userBMI < 18.5) {
         outGlassBox.innerHTML = `
             <div class="d-flex flex-column align-items-center px-4 py-3">
-                <img src="/assets/imgs/underweight.webp" width="100%" alt="">
+                <img src="assets/imgs/underweight.webp" width="100%" alt="">
             </div>
             <div class="glass_body p-4 mb-3 d-flex justify-content-around">
                 <div class="calc_BMI">
@@ -54,7 +54,7 @@ function calculateBMI() {
     else if (userBMI < 25) {
         outGlassBox.innerHTML = `
             <div class="d-flex flex-column align-items-center px-4 py-3">
-                <img src="/assets/imgs/normal.webp" width="100%" alt="">
+                <img src="assets/imgs/normal.webp" width="100%" alt="">
             </div>
             <div class="glass_body p-4 mb-3 d-flex justify-content-around">
                 <div class="calc_BMI">
@@ -80,7 +80,7 @@ function calculateBMI() {
     else if (userBMI < 30) {
         outGlassBox.innerHTML = `
             <div class="d-flex flex-column align-items-center px-4 py-3">
-                <img src="/assets/imgs/overweight.webp" width="100%" alt="">
+                <img src="assets/imgs/overweight.webp" width="100%" alt="">
             </div>
             <div class="glass_body p-4 mb-3 d-flex justify-content-around">
                 <div class="calc_BMI">
@@ -106,7 +106,7 @@ function calculateBMI() {
     else {
         outGlassBox.innerHTML = `
             <div class="d-flex flex-column align-items-center px-4 py-3">
-                <img src="/assets/imgs/fat.webp" width="100%" alt="">
+                <img src="assets/imgs/fat.webp" width="100%" alt="">
             </div>
             <div class="glass_body p-4 mb-3 d-flex justify-content-around">
                 <div class="calc_BMI">
