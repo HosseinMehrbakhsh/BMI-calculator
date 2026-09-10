@@ -1,0 +1,27 @@
+body {
+    background-image: url('/assets/imgs/background.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.inp_glass_box {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.glass_head {
+    background: linear-gradient(90deg, rgb(0, 54, 218), #0dcaf0);
+    border-radius: 15px 15px 0 0;
+    color: white;
+}
+
+.out_glass_box {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    border: 1px solid white;
+}

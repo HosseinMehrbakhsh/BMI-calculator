@@ -1,0 +1,39 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="inp_glass_box d-flex flex-column shadow-lg">
+            <div class="glass_head d-flex flex-column align-items-center px-4 py-3">
+                <span class="fs-5 pb-2 fw-semibold"> ماشین حساب BMI</span>
+                <span class="small"><small>شاخص توده بدنی خود را محاسبه کنید</small></span>
+            </div>
+            <div class="glass_body p-4">
+                <label class="pb-1" for="user_height">قد (سانتی متر)</label>
+                <input class="form-control mb-4" id="user_height" type="text" placeholder="مثال: 170">
+
+                <label class="pb-1" for="user_weight">وزن (کیلوگرم)</label>
+                <input class="form-control mb-4" id="user_weight" type="text" placeholder="مثال: 65">
+
+                <button class="calc_btn btn btn-info w-100">محاسبه BMI</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
